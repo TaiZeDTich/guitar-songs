@@ -92,15 +92,7 @@ function showView(viewName) {
 }
 
 function getRepoName() {
-    if (window.location.hostname === "localhost") {
-        return "TaiZeDTich/guitar-songs"; // Замените!
-    }
-    const parts = window.location.pathname.split("/");
-    if (parts.length >= 2) {
-        return `${parts[1]}/${parts[2]}`;
-    }
-    // Если не определилось, спросим
-    return prompt("Введите имя репозитория в формате логин/название", "ваш_логин/guitar-songs");
+    return "TaiZeDTich/guitar-songs";
 }
 
 let currentCategory = null;
