@@ -64,7 +64,7 @@ button.hidden {
     border-radius: 24px;
     font-family: 'Courier New', monospace;
     font-size: 18px;
-    line-height: 2.2;
+    line-height: 2.5;  /* было 2.2 – увеличим */
     white-space: pre-wrap;
     overflow-x: auto;
 }
@@ -75,8 +75,11 @@ button.hidden {
     background: #fef5e7;
     padding: 0 2px;
     border-radius: 6px;
-    font-size: 0.85em;
+    font-size: 0.75em;
+    position: relative;
+    top: -0.8em;
     margin-right: 2px;
+    margin-left: 1px;
 }
 .view.hidden {
     display: none;
