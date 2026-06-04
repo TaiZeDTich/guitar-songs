@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Гитарный песенник</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎸 Мои песни</h1>
+            <button id="backBtn" class="hidden">← Назад к категориям</button>
+        </header>
+
+        <div id="categoriesView" class="view">
+            <h2>Категории</h2>
+            <div id="categoriesList" class="list"></div>
+        </div>
+
+        <div id="songsView" class="view hidden">
+            <h2 id="categoryTitle"></h2>
+            <div id="songsList" class="list"></div>
+        </div>
+
+        <div id="songView" class="view hidden">
+            <h2 id="songTitle"></h2>
+            <div id="songArtist" class="artist"></div>
+            <div id="songText" class="song-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
