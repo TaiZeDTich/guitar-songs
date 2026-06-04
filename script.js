@@ -1,4 +1,14 @@
-const CATEGORIES = ["rock", "pop", "bard"];
+const CATEGORIES = [
+    "Группа Порнофильмы",
+    "Группа Сектор Газа",
+    "Разные песни",
+    "Группа Звери",
+    "Группа Король и Шут",
+    "Группа Валентин Стрыкало",
+    "Группа Макс Корж",
+    "Походные",
+    "РСО"
+];
 
 document.addEventListener("DOMContentLoaded", () => {
     renderCategories();
