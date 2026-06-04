@@ -1,0 +1,30 @@
+# Файл со ссылками для автоматического обновления аккордов
+# Формат: путь_к_json_файлу|ссылка_на_amdm
+
+# --- Группа Порнофильмы ---
+songs/Группа Порнофильмы/Звездочка.json|https://913.amdm.ru/akkordi/pornofilmy/174310/zvezdochka/
+songs/Группа Порнофильмы/Я_так_соскучился.json|https://804.amdm.ru/akkordi/pornofilmy/174824/ya_tak_soskuchilsya/
+songs/Группа Порнофильмы/Прости,_прощай,_привет.json|https://804.amdm.ru/akkordi/pornofilmy/151879/prosti_proshchay_privet/
+songs/Группа Порнофильмы/Уроки_любви.json|https://804.amdm.ru/akkordi/pornofilmy/173286/uroki_lyubvi/
+songs/Группа Порнофильмы/Ритуалы.json|https://804.amdm.ru/akkordi/pornofilmy/162528/rituali/
+songs/Группа Порнофильмы/Русский_Христос.json|https://804.amdm.ru/akkordi/pornofilmy/161322/russkiy_hristos/
+songs/Группа Порнофильмы/Доброе_сердце.json|https://804.amdm.ru/akkordi/pornofilmy/172914/dobroe_serdtse/
+songs/Группа Порнофильмы/Я_так_боюсь.json|https://804.amdm.ru/akkordi/pornofilmy/161466/ya_tak_boys/
+songs/Группа Порнофильмы/Россия_для_грустных.json|https://804.amdm.ru/akkordi/pornofilmy/163645/rossiya_dlya_grustnih/
+songs/Группа Порнофильмы/Молодая_семья.json|https://804.amdm.ru/akkordi/pornofilmy/133398/molodaya_semya/
+songs/Группа Порнофильмы/Кто_все_эти_люди.json|https://804.amdm.ru/akkordi/pornofilmy/128567/kto_vse_eti_lydi/
+songs/Группа Порнофильмы/Приезжай.json|https://804.amdm.ru/akkordi/pornofilmy/139047/priezzhay/
+songs/Группа Порнофильмы/Выйди_из_комнаты.json|https://804.amdm.ru/akkordi/pornofilmy/162853/viydi_iz_komnati/
+songs/Группа Порнофильмы/Папа,_не_пей.json|https://804.amdm.ru/akkordi/pornofilmy/139585/papa_ne_pey/
+songs/Группа Порнофильмы/Отъ#битесь_от_детей.json|https://804.amdm.ru/akkordi/pornofilmy/128484/ot_bites_ot_detey/
+songs/Группа Порнофильмы/Песня_в_пустоту.json|https://804.amdm.ru/akkordi/pornofilmy/161671/pesnya_v_pustotu/
+
+# --- Группа Сектор Газа ---
+songs/Группа Сектор Газа/Лирика.json|https://67.amdm.ru/akkordi/sektor_gaza/24057/lirika/
+songs/Группа Сектор Газа/Бомж.json|https://67.amdm.ru/akkordi/sektor_gaza/2247/bomzh/
+songs/Группа Сектор Газа/Демобилизация.json|https://67.amdm.ru/akkordi/sektor_gaza/100951/demobilizaciya/
+songs/Группа Сектор Газа/30_лет.json|https://67.amdm.ru/akkordi/sektor_gaza/92604/30_let/
+songs/Группа Сектор Газа/Туман.json|https://67.amdm.ru/akkordi/sektor_gaza/1601/tuman/
+songs/Группа Сектор Газа/Частушки.json|https://67.amdm.ru/akkordi/sektor_gaza/2830/chastushki/
+songs/Группа Сектор Газа/Пора_домой.json|https://67.amdm.ru/akkordi/sektor_gaza/4095/pora_domoy/
+songs/Группа Сектор Газа/Возле_дома_твоего.json|https://67.amdm.ru/akkordi/sektor_gaza/100802/vozle_doma_tvoego/
