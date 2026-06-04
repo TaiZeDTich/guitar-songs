@@ -84,3 +84,44 @@ button.hidden {
 .view.hidden {
     display: none;
 }
+
+/* Стили для форматного отображения (как на amdm) */
+.song-text {
+    background: white;
+    padding: 20px;
+    border-radius: 24px;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+.song-line {
+    margin-bottom: 0.25em; /* Небольшой отступ между строками */
+}
+
+/* Строка с аккордами */
+.chords-line {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #d35400; /* Оранжевый цвет, как у тебя был */
+    letter-spacing: 1px; /* Добавляем чуть-чуть воздуха между аккордами */
+    font-size: 0.9em;
+}
+
+/* Обычная строка с текстом */
+.lyrics-line {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+    color: #2c3e2f;
+    line-height: 1.4;
+}
+
+/* Старый стиль для аккордов можно удалить или оставить на всякий случай */
+.chord {
+    /* Убедись, что здесь нет свойств position: relative или top: -... */
+    /* Им можно просто задать цвет */
+    color: #d35400;
+    font-weight: bold;
+}
