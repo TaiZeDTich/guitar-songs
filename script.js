@@ -51,20 +51,52 @@ async function loadCategory(category) {
 }
 
 async function loadSong(category, songName) {
-    const fileUrl = `https://raw.githubusercontent.com/${getRepoName()}/main/songs/${category}/${songName}.json`;
+    const fileUrl = `https://raw.githubusercontent.com/TaiZeDTich/guitar-songs/main/songs/${category}/${songName}.json`;
     try {
         const response = await fetch(fileUrl);
         const songData = await response.json();
         document.getElementById("songTitle").textContent = songData.title || songName;
         document.getElementById("songArtist").textContent = songData.artist || "";
-        let text = songData.text || "Текст не задан";
-        let formatted = text.replace(/\[([^\]]+)\]/g, '<span class="chord">$1</span>');
-        document.getElementById("songText").innerHTML = formatted.replace(/\n/g, '<br>');
+
+        let rawText = songData.text || "Текст не задан";
+        // Разбиваем текст на строки
+        let lines = rawText.split('\n');
+
+        let formattedHtml = '';
+        for (let line of lines) {
+            // Проверяем, содержит ли строка аккорды (любые символы в квадратных скобках)
+            if (line.match(/\[.*?\]/)) {
+                // Строка с аккордами — обрабатываем её отдельно
+                let chordsHtml = line.replace(/\[(.*?)\]/g, '<span class="chord">$1</span>');
+                formattedHtml += `<div class="song-line chords-line">${chordsHtml}</div>`;
+            } else if (line.trim() !== "") {
+                // Обычная текстовая строка
+                formattedHtml += `<div class="song-line lyrics-line">${escapeHtml(line)}</div>`;
+            } else {
+                // Пустая строка — просто добавляем <br>
+                formattedHtml += `<br>`;
+            }
+        }
+
+        // Вставляем результат на страницу
+        document.getElementById("songText").innerHTML = formattedHtml;
         showView("song");
     } catch (err) {
         document.getElementById("songText").innerHTML = "Ошибка загрузки песни";
         console.error(err);
     }
+}
+
+// Вспомогательная функция для экранирования спецсимволов, чтобы твой код был в безопасности
+function escapeHtml(text) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+    };
+    return text.replace(/[&<>"']/g, function(m) { return map[m]; });
 }
 
 function goBack() {
