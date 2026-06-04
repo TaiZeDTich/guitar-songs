@@ -64,7 +64,7 @@ button.hidden {
     border-radius: 24px;
     font-family: 'Courier New', monospace;
     font-size: 18px;
-    line-height: 2.5;  /* было 2.2 – увеличим */
+    line-height: 3;  /* было 2.2 – увеличим */
     white-space: pre-wrap;
     overflow-x: auto;
 }
