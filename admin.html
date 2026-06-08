@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Редактор песен</title>
+  <style>body{margin:0;font-family:system-ui}</style>
+</head>
+<body>
+  <script src="https://unpkg.com/sveltia-cms@latest/dist/sveltia-cms.js"></script>
+  <script>
+    window.CMS_CONFIG = {
+      backend: {
+        name: 'github',
+        repo: 'TaiZeDTich/guitar-songs',
+        branch: 'main',
+        auth_endpoint: 'https://guitar-cms-auth.taizedacaut.workers.dev/callback'
+      },
+      load_config: async () => ({
+        collections: [{
+          name: 'songs',
+          label: 'Песни',
+          folder: 'songs',
+          create: true,
+          slug: '{{slug}}',
+          fields: [
+            { name: 'title', label: 'Название', widget: 'string' },
+            { name: 'artist', label: 'Исполнитель', widget: 'string' },
+            { name: 'text', label: 'Текст с аккордами', widget: 'text' }
+          ]
+        }]
+      })
+    };
+  </script>
+</body>
+</html>
